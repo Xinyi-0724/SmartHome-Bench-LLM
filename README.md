@@ -89,11 +89,9 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 
 ## :wrench: How to Use
 
->1. The video URLs are provided in an Excel file located in the `Videos` folder of this GitHub repository. 
+>1. The video URLs are provided in an Excel file [Video_url.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.xlsx) of this GitHub repository. The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos, contributed by our staff, are private and cannot be downloaded.
 >
->   The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos were contributed by our staff and can be downloaded directly from this repository under the folder: [Wyze_Videos](https://github.com/Xinyi-0724/SmartHome-Bench/tree/main/Videos/Wyze_Videos).
->
->2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done using the script [Video_trim_wyze.ipynb](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Trim_Videos/Video_trim_wyze.ipynb) and the trim time information available in [Wyze_video_label.csv](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Trim_Videos/Wyze_video_label.csv), both of which are located in the [Trim_Videos](https://github.com/Xinyi-0724/SmartHome-Bench/tree/main/Videos/Trim_Videos) folder.
+>2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done using the script [Video_trim.ipynb](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Video_trim.ipynb) and the trim time information available in [Trim_video_label.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Trim_video_label.csv).
 >
 >3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.xlsx).
 >
@@ -115,6 +113,4 @@ If you use **SmartHome-Bench** in a scientific publication, we would appreciate 
   year={2024},
 }
 ```
-
-
 
