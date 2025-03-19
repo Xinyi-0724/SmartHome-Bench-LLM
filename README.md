@@ -95,7 +95,7 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 >
 >3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.xlsx).
 >
->   **Acknowledgment:** We thank Kevin Beussman, Lin Chen, Pei Guo, Wei Li, Xinyi Zhao, and Congjing Zhang for donating the videos. We also thank Pei Guo, Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for assisting with the video annotation process.
+>   **Acknowledgment:** We thank Kevin Beussman for donating the videos. We also thank Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for assisting with the video annotation process.
 
 </div>
 
