@@ -80,14 +80,14 @@ Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 
     <em>Fig. 3 Distribution of Video Duration, Description Word Count, and Reasoning Word Count.</em>
 </p>
 
-##  
+<!--
 
 >Figure 3 presents the distribution of the time durations for these 1,203 video clips, as well as the word count distribution for the descriptions and reasoning annotations, offering insights into the complexity of the videos.
 
 - The majority of smart home video clips are shorter than 80 seconds.
 - Reasoning annotations are typically more concise than descriptions, as they focus only on the key event leading to the anomaly tag.
 - Descriptions provide a more detailed account of all events in the video.
-
+-->
 
 ## :wrench: How to Use
 ### Downaloading Videos
