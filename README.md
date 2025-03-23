@@ -20,7 +20,7 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 
 ## :star: Features
 
-**SmartHome-Bench** is the first video dataset specifically designed for smart home surveillance scenarios. It serves as a benchmark not only for video anomaly detection (VAD) but also offers a versatile evaluation platform to comprehensively assess the performance of multi-modal large language models (MLLMs) in video reasoning and interpretation.
+**SmartHome-Bench** is the first video dataset specifically designed for smart home surveillance scenarios. It serves as a benchmark not only for video anomaly detection (VAD) but also offers a versatile evaluation platform to comprehensively assess the performance of multi-modal large language models (MLLMs) in video reasoning and interpretation. Please see our paper here: (add link).
 
 -  :house: First benchmark specifically designed for detecting anomalies in smart home videos.
 - :movie_camera: Dataset includes 1,203 video clips, each annotated with:
@@ -31,19 +31,22 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 - :fire: Evaluation of state-of-the-art closed-source and open-source LLMs using various prompting techniques.
 
 
-
+<!--
 ##   :books: Anomaly Taxonomy
-
+-->
 <p align="center">
  <img src="Figures/taxonomy.png" width="60%">
     <br>
     <em>Fig. 2 Overview of the video anomaly taxonomy in smart homes.</em>
 </p>
 
-##  
 
->Figure 2 provides an overview of this taxonomy, which covers seven categories of scenarios that frequently occur at home and are of concern to users. Each category is further divided into normal and abnormal videos, with detailed descriptions provided for both. For instance, the taxonomy for the **Wildlife** category includes the following situation for normal videos and abnormal videos:
 
+>Figure 2 provides an overview of this taxonomy, which covers seven categories of scenarios that frequently occur at home and are of concern to users. Each category is further divided into normal and abnormal videos, with detailed descriptions provided for both.
+<!--
+>For instance, the taxonomy for the **Wildlife** category includes the following situation for normal videos and abnormal videos:
+-->
+<!--
 - **Normal Videos**:
   - **Harmless Wildlife**: Harmless wildlife sightings, such as squirrels, birds, or rabbits, moving through the yard.
   - **Common Pests**: Common pest activity that doesn’t pose immediate danger (e.g., bugs in the garden).
@@ -53,7 +56,7 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
   - **Wildlife Damage**: Any wildlife activity that causes or potentially causes damage to property or threatens human or pet safety.
   - **Indoor Wildlife**: Any wildlife (dangerous or not) that enters a home without clear containment.
 
-
+-->
 
 
 ## :minidisc: Video Collection
@@ -64,11 +67,11 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 3. Videos were scraped using these keywords and carefully screened to ensure they were exclusively captured by smart home cameras.
 
 
-
+<!--
 ##   :bar_chart: Dataset Statistics
 
 Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 7 categories. As shown in Figure 1, the dataset is balanced, with a similar number of abnormal and normal videos. Among the 7 categories, the security category contains the most videos.
-
+-->
 
 
 <p align="center">
@@ -84,7 +87,6 @@ Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 
 - The majority of smart home video clips are shorter than 80 seconds.
 - Reasoning annotations are typically more concise than descriptions, as they focus only on the key event leading to the anomaly tag.
 - Descriptions provide a more detailed account of all events in the video.
-
 
 
 ## :wrench: How to Use
