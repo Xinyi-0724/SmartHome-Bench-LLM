@@ -41,8 +41,10 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 </p>
 
 
-
+<!--
 >Figure 2 provides an overview of this taxonomy, which covers seven categories of scenarios that frequently occur at home and are of concern to users. Each category is further divided into normal and abnormal videos, with detailed descriptions provided for both.
+-->
+
 <!--
 >For instance, the taxonomy for the **Wildlife** category includes the following situation for normal videos and abnormal videos:
 -->
