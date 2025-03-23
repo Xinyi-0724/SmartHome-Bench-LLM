@@ -58,16 +58,16 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 
 ## :minidisc: Video Collection
 
->1. Videos were collected primarily from public resources, such as YouTube, based on seven taxonomy categories.
->2. Specific keywords were developed for each category to guide the search.
->   - Example: "cat play home cam" for normal pet monitoring footage, and "pet vomit home cam" for abnormal events.
->3. Videos were scraped using these keywords and carefully screened to ensure they were exclusively captured by smart home cameras.
+1. Videos were collected primarily from public resources, such as YouTube, based on seven taxonomy categories.
+2. Specific keywords were developed for each category to guide the search.
+   - Example: "cat play home cam" for normal pet monitoring footage, and "pet vomit home cam" for abnormal events.
+3. Videos were scraped using these keywords and carefully screened to ensure they were exclusively captured by smart home cameras.
 
 
 
 ##   :bar_chart: Dataset Statistics
 
->Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 7 categories. As shown in Figure 1, the dataset is balanced, with a similar number of abnormal and normal videos. Among the 7 categories, the security category contains the most videos.
+Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 7 categories. As shown in Figure 1, the dataset is balanced, with a similar number of abnormal and normal videos. Among the 7 categories, the security category contains the most videos.
 
 
 
