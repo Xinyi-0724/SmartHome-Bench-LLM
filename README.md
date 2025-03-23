@@ -88,14 +88,30 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 
 
 ## :wrench: How to Use
+### Downaloading Videos
+1. The video URLs are provided in an Excel file [Video_url.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.xlsx) of this GitHub repository. The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos, contributed by our staff, are private and cannot be downloaded.
 
->1. The video URLs are provided in an Excel file [Video_url.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.xlsx) of this GitHub repository. The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos, contributed by our staff, are private and cannot be downloaded.
->
->2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done using the script [Video_trim.ipynb](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Video_trim.ipynb) and the trim time information available in [Trim_video_label.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Trim_video_label.csv).
->
->3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.xlsx).
->
+2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done using the script [Video_trim.ipynb](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Video_trim.ipynb) and the trim time information available in [Trim_video_label.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Trim_video_label.csv).
+
+3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.xlsx).
+
 >   **Acknowledgment:** We thank Kevin Beussman for donating the videos. We also thank Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for assisting with the video annotation process.
+
+
+### Running Models and Evaluation
+To run our experiments, you can select:
+
+- **Model:** ('Claude', 'Flash', 'GPT', 'GPTmini', 'Pro', 'VILA')
+- **Method:** ('zeroshot', 'fewshot', 'COT')
+- **Step:** (`Step1` for generating model responses, `Step2` for calculating accuracy. VILA only has Step2.)
+
+After downloading this repository, run the following command:
+
+```bash
+python run.py --model <model_name> --method <method_name> --step <Step1 or Step2>
+```
+
+
 
 </div>
 
