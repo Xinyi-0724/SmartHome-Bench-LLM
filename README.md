@@ -112,7 +112,7 @@ To run our experiments, you can select:
 After downloading this repository, run the following command:
 
 ```bash
-python run.py --model <model_name> --method <method_name> --step <Step1 or Step2>
+python run.py --model <model_name> --method <method_name> --step <Step1 or Step2 or Step3>
 ```
 
 
