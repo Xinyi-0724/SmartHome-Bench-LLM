@@ -1,0 +1,14 @@
+{
+  "rules": [
+    "Rule 1: Detect unusual or eccentric behavior by individuals that could alarm or frighten viewers.",
+    "Rule 2: Identify pets outdoors without their owner.",
+    "Rule 3: Monitor the presence of wild animals near the house, posing potential danger or risk of property damage.",
+    "Rule 4: Detect individuals attempting unauthorized access to the property or vehicles, indicating potential theft.",
+    "Rule 5: Monitor severe weather conditions or disasters like fires or earthquakes causing property damage or safety hazards.",
+    "Rule 6: Identify children outside the home without supervision.",
+    "Rule 7: Detect pets causing property damage or attempting to escape.",
+    "Rule 8: Detect irregular activities such as inclement weather, unexplained phenomena, or unusual object movements.",
+    "Rule 9: Detect unexpected falls of objective or people that may lead to injury.",
+    "Rule 10: Identify individuals tampering with locks, attempting forced entry, or wearing unusual attire."
+  ]
+}
