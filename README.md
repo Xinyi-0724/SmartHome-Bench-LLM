@@ -93,11 +93,11 @@ Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 
 
 ## :wrench: How to Use
 ### Downaloading Videos
-1. The video URLs are provided in an Excel file [Video_url.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.xlsx) of this GitHub repository. The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos, contributed by our staff, are private and cannot be downloaded.
+1. The video URLs are provided in an Excel file [Video_url.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.csv) of this GitHub repository. The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos, contributed by our staff, are private and cannot be downloaded.
 
-2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done using the script [Video_trim.ipynb](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Video_trim.ipynb) and the trim time information available in [Trim_video_label.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Trim_video_label.csv).
+2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done using the script [Video_trim.py](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Video_trim.py) and the trim time information available in [Trim_video_label.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Videos/Trim_Videos/Trim_video_label.csv).
 
-3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.xlsx](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.xlsx).
+3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.csv](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.csv).
 
 >   **Acknowledgment:** We thank Kevin Beussman for donating the videos. We also thank Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for assisting with the video annotation process.
 
