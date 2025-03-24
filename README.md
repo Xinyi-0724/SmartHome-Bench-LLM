@@ -105,9 +105,9 @@ Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 
 ### Running Models and Evaluation
 To run our experiments, you can select:
 
-- **Model:** ('Claude', 'Flash', 'GPT', 'GPTmini', 'Pro', 'VILA')
-- **Method:** ('zeroshot', 'fewshot', 'COT')
-- **Step:** (`Step1` for generating model responses, `Step2` for calculating accuracy. VILA only has Step2.)
+- **Model:** ('Claude', 'Flash', 'GPT', 'GPTmini', 'Pro')
+- **Method:** ('zeroshot', 'fewshot', 'COT', 'ICL', 'LLMChain')
+- **Step:** (For the first four methods, `Step1` for generating model responses, `Step2` for calculating accuracy; For 'LLMChain', `Step1` for generating initial model responses, `Step2` for generating rule-based self-reflection, `Step3` for calculating accuracy.)
 
 After downloading this repository, run the following command:
 
