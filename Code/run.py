@@ -3,12 +3,12 @@ import subprocess
 
 def main():
     parser = argparse.ArgumentParser(description="Run model evaluation scripts.")
-    parser.add_argument('--model', type=str, required=True, choices=['Claude', 'Flash', 'GPT', 'GPTmini', 'Pro', 'VILA'],
-                        help='Model to run (Claude, Flash, GPT, GPTmini, Pro, VILA)')
-    parser.add_argument('--method', type=str, required=True, choices=['zeroshot', 'fewshot', 'COT'],
-                        help='Method to use (zeroshot, fewshot, COT)')
-    parser.add_argument('--step', type=str, required=True, choices=['Step1', 'Step2'],
-                        help='Step to run (Step1 or Step2)')
+    parser.add_argument('--model', type=str, required=True, choices=['Claude', 'Flash', 'GPT', 'GPTmini', 'Pro'],
+                        help='Model to run (Claude, Flash, GPT, GPTmini, Pro)')
+    parser.add_argument('--method', type=str, required=True, choices=['zeroshot', 'fewshot', 'COT', 'ICL', 'LLMChain'],
+                        help='Method to use (zeroshot, fewshot, COT, ICL, LLMChain)')
+    parser.add_argument('--step', type=str, required=True, choices=['Step1', 'Step2', 'Step3'],
+                        help='Step to run (Step1 or Step2 or Step3)')
 
     args = parser.parse_args()
 
