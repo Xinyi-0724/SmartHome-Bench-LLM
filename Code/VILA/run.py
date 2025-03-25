@@ -12,7 +12,7 @@ def main():
 
     args = parser.parse_args()
 
-    script_path = f"{args.method}/{args.model}_{args.method}_{args.step}.py"
+    script_path = f"{args.model}_{args.method}_{args.step}.py"
     print(f"Running: {script_path}")
 
     subprocess.run(['python', script_path])
