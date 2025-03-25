@@ -134,11 +134,16 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
         - `Step1`: Generate initial model responses
         - `Step2`: Generate rule-based self-reflection
         - `Step3`: Calculate accuracy
+        - 
+- **Arguments:**
+    - model_name: Flash, Pro, GPT, GPTmini, Claude
+    - method_name: zeroshot, fewshot, COT, ICL, LLMChain,
+    - step: Step1, Step2, Step3
 
 - **Command:** 
 ```bash
 cd SmartHome-Bench-LLM/Code
-python run.py --model <model_name> --method <method_name> --step <Step1|Step2|Step3>
+python run.py --model <model_name> --method <method_name> --step <step>
 ```
 
 #### :yellow_circle: Open-Source Model: VILA ####
