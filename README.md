@@ -179,4 +179,4 @@ If you use **SmartHome-Bench** in a scientific publication, we would appreciate 
   year={2024},
 }
 ```
-
+This paper is finished during the internship at Wyze.
