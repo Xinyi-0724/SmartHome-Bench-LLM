@@ -118,7 +118,7 @@ python Video_trim.py
 
 
 ### Running Models and Evaluation
-To run our experiments, you can select:
+You can run our experiments using either closed-source or open-source models by specifying the model, method, and evaluation step.
 
 - **Model:** ('Claude', 'Flash', 'GPT', 'GPTmini', 'Pro')
 - **Method:** ('zeroshot', 'fewshot', 'COT', 'ICL', 'LLMChain')
