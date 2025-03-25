@@ -1,2 +1,10 @@
-tqdm
+opencv-python
+numpy
+pandas
 openai
+google-cloud-storage
+google-cloud-aiplatform
+google-generativeai
+vertexai
+httpx
+anthropic
