@@ -108,7 +108,7 @@ pip install -r requirements.txt
 
 2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done by running the following command:
 ```bash
-cd Videos/Trim_Videos
+cd SmartHome-Bench-LLM/Videos/Trim_Videos
 python Video_trim.py
 ```
 
@@ -127,7 +127,7 @@ To run our experiments, you can select:
 After downloading this repository, run the following command:
 
 ```bash
-cd Code
+cd SmartHome-Bench-LLM/Code
 python run.py --model <model_name> --method <method_name> --step <Step1 or Step2 or Step3>
 ```
 
