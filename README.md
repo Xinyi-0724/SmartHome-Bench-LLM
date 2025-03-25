@@ -103,7 +103,7 @@ cd SmartHome-Bench-LLM
 pip install -r requirements.txt
 ```
 
-### Downloading Videos
+### Download Videos
 1. The video URLs are provided in an Excel file [Video_url.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.csv) of this GitHub repository. The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos, contributed by our staff, are private and cannot be downloaded.
 
 2. After downloading the videos, you need to trim them to extract the specific clips used in our paper. This can be done by running the following command:
@@ -117,7 +117,7 @@ python Video_trim.py
 >   **Acknowledgment:** We thank Kevin Beussman for donating the videos. We also thank Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for assisting with the video annotation process.
 
 
-### Running Models and Evaluation
+### Run Models and Evaluate
 You can run our experiments using either closed-source or open-source models by specifying the model, method, and evaluation step.
 #### :green_circle: Closed-Source Models ####
 - **Supported Models:**
