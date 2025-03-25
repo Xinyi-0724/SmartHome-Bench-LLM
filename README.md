@@ -139,6 +139,7 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
     - model_name: Flash, Pro, GPT, GPTmini, Claude
     - method_name: zeroshot, fewshot, COT, ICL, LLMChain,
     - step: Step1, Step2, Step3
+    - example usage: python run.py --model Flash --method zeroshot --step Step1
 
 - **Command:** 
 ```bash
