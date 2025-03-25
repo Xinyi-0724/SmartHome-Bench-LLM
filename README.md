@@ -92,6 +92,17 @@ Our **SmartHome-Bench** dataset consists of 1,203 smart home video clips across 
 -->
 
 ## :wrench: How to Use
+### Clone the Repository
+1. Clone this repository and navigate to the SmartHome-Bench-LLM folder:
+```bash
+git clone https://github.com/Xinyi-0724/SmartHome-Bench-LLM.git
+cd SmartHome-Bench-LLM
+```
+2. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+
 ### Downloading Videos
 1. The video URLs are provided in an Excel file [Video_url.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.csv) of this GitHub repository. The first 1,023 videos can be downloaded from YouTube using the provided URLs, while the remaining 180 videos, contributed by our staff, are private and cannot be downloaded.
 
