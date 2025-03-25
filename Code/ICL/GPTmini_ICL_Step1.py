@@ -9,9 +9,13 @@ import concurrent.futures
 
 from openai import OpenAI
 from google.cloud import storage
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 # Set up your OpenAI API key
-client = OpenAI()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 # Convert video frames to base64 strings
 def convert_video_to_base64(video_path):
     video = cv2.VideoCapture(video_path)
