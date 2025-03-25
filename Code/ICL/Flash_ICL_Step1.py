@@ -6,11 +6,15 @@ import pandas as pd
 import vertexai
 import concurrent.futures
 
+from dotenv import load_dotenv
 from vertexai.generative_models import GenerationConfig, GenerativeModel, Part
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from google.cloud.aiplatform_v1beta1.types import (
     content as gapic_content_types,
 )
+
+# Load environment variables from .env file
+load_dotenv()
 
 HarmCategory = gapic_content_types.HarmCategory
 # Initialize Vertex AI
@@ -201,7 +205,8 @@ def main_part(project_id, model_type, batch_size):
     return jsonl_filename, df_time
 # Example usage
 if __name__ == "__main__":
-    project_id = 'YourProjectID'
+    # Access the project ID from environment variables
+    project_id = os.getenv("PROJECT_ID")
     batch_size = 10  # Adjust batch size as needed
     model_type = 'flash'  # or 'pro'
     filename, df_time = main_part(project_id, model_type, batch_size)
