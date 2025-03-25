@@ -119,19 +119,44 @@ python Video_trim.py
 
 ### Running Models and Evaluation
 You can run our experiments using either closed-source or open-source models by specifying the model, method, and evaluation step.
+**Closed-Source Models:**
+- **Supported Models:**
+Gemini-1.5-flash-001, Gemini-1.5-pro-001, GPT-4o-2024-08-06, GPT-4o-mini-2024-07-18, and Claude-3.5-sonnet@20240229
 
-- **Model:** ('Claude', 'Flash', 'GPT', 'GPTmini', 'Pro')
-- **Method:** ('zeroshot', 'fewshot', 'COT', 'ICL', 'LLMChain')
-- **Step:** (For the first four methods, `Step1` for generating model responses, `Step2` for calculating accuracy; For 'LLMChain', `Step1` for generating initial model responses, `Step2` for generating rule-based self-reflection, `Step3` for calculating accuracy.)
+- **Supported Methods:**
+Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chaining
 
-After downloading this repository, run the following command:
+- **Steps:**
+For zero-shot, few-shot, CoT, ICL:
+    - `Step1`: Generate model responses
+    - `Step2`: Calculate accuracy
 
+For LLM Chaining:
+    - `Step1`: Generate initial model responses
+    - `Step2`: Generate rule-based self-reflection
+    - `Step3`: Calculate accuracy
+
+- **Command:** 
 ```bash
 cd SmartHome-Bench-LLM/Code
-python run.py --model <model_name> --method <method_name> --step <Step1 or Step2 or Step3>
+python run.py --model <model_name> --method <method_name> --step <Step1|Step2|Step3>
 ```
 
+**Open-Source Model: VILA**
+We integrate with [VILA](https://github.com/NVlabs/VILA) for open-source experiments.
 
+- **Supported Methods:**
+Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL)
+
+- **Steps:**
+    - `Step1`: (Already completed) Model-generated responses are collected and stored [HERE](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Code/VILA/response) 
+    - `Step2`: Calculate accuracy based on collected responses
+
+- **Command:** 
+```bash
+cd SmartHome-Bench-LLM/Code/VILA
+python run.py --model <model_name> --method <method_name> --step Step2
+```
 
 </div>
 
