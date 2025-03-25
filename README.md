@@ -134,7 +134,7 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
         - `Step1`: Generate initial model responses
         - `Step2`: Generate rule-based self-reflection
         - `Step3`: Calculate accuracy
-        - 
+          
 - **Arguments:**
     - model_name: Flash, Pro, GPT, GPTmini, Claude
     - method_name: zeroshot, fewshot, COT, ICL, LLMChain,
