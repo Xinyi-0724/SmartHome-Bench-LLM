@@ -8,11 +8,15 @@ import pandas as pd
 import concurrent.futures
 import httpx
 
+from dotenv import load_dotenv
 from anthropic import AnthropicVertex
+
+# Load environment variables from .env
+load_dotenv()
 
 # Set up your Claude 3.5 Sonnet API client
 LOCATION = "europe-west1"  # or "us-east5"
-client = AnthropicVertex(region=LOCATION, project_id="YourProjectID")
+client = AnthropicVertex(region=LOCATION, project_id=os.getenv("PROJECT_ID"))
 
 def convert_video_to_base64(video_path):
     MAX_SIZE_MB = 27  # 30 MB limit
