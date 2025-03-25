@@ -130,6 +130,7 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
 For zero-shot, few-shot, CoT, ICL:
     - `Step1`: Generate model responses
     - `Step2`: Calculate accuracy
+
 For LLM Chaining:
     - `Step1`: Generate initial model responses
     - `Step2`: Generate rule-based self-reflection
