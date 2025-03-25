@@ -130,7 +130,7 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
 For zero-shot, few-shot, CoT, ICL:
     - `Step1`: Generate model responses
     - `Step2`: Calculate accuracy
-
+- 
 For LLM Chaining:
     - `Step1`: Generate initial model responses
     - `Step2`: Generate rule-based self-reflection
@@ -169,7 +169,7 @@ If you use **SmartHome-Bench** in a scientific publication, we would appreciate 
 ```bibtex
 @article{zhao2024smarthome,
   title={SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models},
-  author={Zhao, Xinyi and Zhang, Congjing},
+  author={Xinyi Zhao, Congjing Zhang, Pei Guo, Wei Li, Chen Lin, Chaoyue Zhang, Shuai Huang},
   journal={arXiv preprint arXiv: },
   year={2024},
 }
