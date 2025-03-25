@@ -8,7 +8,11 @@ import pandas as pd
 import concurrent.futures
 import httpx
 
+from dotenv import load_dotenv
 from anthropic import AnthropicVertex
+
+# Load environment variables from .env
+load_dotenv()
 
 def extract_video_anomaly_results(filename):
     anomaly_results = {}
@@ -195,7 +199,7 @@ def main_part(videos_dict, formatted_rules, model_type, batch_size, client):
 if __name__ == "__main__":
     # Set up your Claude 3.5 Sonnet API client
     LOCATION = "europe-west1"  # or "us-east5"
-    client = AnthropicVertex(region=LOCATION, project_id="YourProjectID")
+    client = AnthropicVertex(region=LOCATION, project_id=os.getenv("PROJECT_ID"))
     # Get the video description first:
     model_type = 'claude-3-5-sonnet'
     video_descriptions = extract_video_anomaly_results(f'rawvideo_chain/responses_{model_type}_llmchain_1203.jsonl')
