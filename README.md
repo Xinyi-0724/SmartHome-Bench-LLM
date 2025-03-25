@@ -119,7 +119,7 @@ python Video_trim.py
 
 ### Running Models and Evaluation
 You can run our experiments using either closed-source or open-source models by specifying the model, method, and evaluation step.
-**Closed-Source Models:**
+## Closed-Source Models ##
 - **Supported Models:**
 Gemini-1.5-flash-001, Gemini-1.5-pro-001, GPT-4o-2024-08-06, GPT-4o-mini-2024-07-18, and Claude-3.5-sonnet@20240229
 
@@ -130,7 +130,6 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
 For zero-shot, few-shot, CoT, ICL:
     - `Step1`: Generate model responses
     - `Step2`: Calculate accuracy
-
 For LLM Chaining:
     - `Step1`: Generate initial model responses
     - `Step2`: Generate rule-based self-reflection
@@ -142,7 +141,7 @@ cd SmartHome-Bench-LLM/Code
 python run.py --model <model_name> --method <method_name> --step <Step1|Step2|Step3>
 ```
 
-**Open-Source Model: VILA**
+## Open-Source Model: VILA ##
 We integrate with [VILA](https://github.com/NVlabs/VILA) for open-source experiments.
 
 - **Supported Methods:**
