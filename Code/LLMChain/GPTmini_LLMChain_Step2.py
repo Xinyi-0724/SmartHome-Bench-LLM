@@ -9,6 +9,10 @@ import concurrent.futures
 
 from openai import OpenAI
 from google.cloud import storage
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def extract_video_anomaly_results(filename):
     anomaly_results = {}
@@ -190,7 +194,7 @@ def main_part(videos_dict, formatted_rules, model_type, batch_size, client):
 # Example usage
 if __name__ == "__main__":
     # Set up your OpenAI API key
-    client = OpenAI()
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     # Get the video description first:
     model_type = 'gpt-4o-mini'
     video_descriptions = extract_video_anomaly_results(f'rawvideo_chain/responses_{model_type}_llmchain_1203.jsonl')
