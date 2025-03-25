@@ -8,3 +8,4 @@ google-generativeai
 vertexai
 httpx
 anthropic
+python-dotenv
