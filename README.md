@@ -127,11 +127,10 @@ Gemini-1.5-flash-001, Gemini-1.5-pro-001, GPT-4o-2024-08-06, GPT-4o-mini-2024-07
 Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chaining
 
 - **Steps:**
-For zero-shot, few-shot, CoT, ICL:
+- For zero-shot, few-shot, CoT, ICL:
     - `Step1`: Generate model responses
     - `Step2`: Calculate accuracy
-- 
-For LLM Chaining:
+- For LLM Chaining:
     - `Step1`: Generate initial model responses
     - `Step2`: Generate rule-based self-reflection
     - `Step3`: Calculate accuracy
