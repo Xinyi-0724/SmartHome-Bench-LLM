@@ -156,9 +156,9 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL)
         > 🔍 **Note:** Any other open-source LLM responses saved in the following JSON format are compatible with `Step2`:
         ```json
         {
-          "id": "<example_id>",
+          "id": "<example_video_id>",
           "truth": <ground_truth_label>,
-          "pred": "{\n  \"result\": <predicted_label>\n}"
+          "pred": "{\n  \"result\": <llm_predicted_label>\n}"
         }
         ```
     - `Step2`: Evaluate model performance (e.g., accuracy) based on the collected responses.
