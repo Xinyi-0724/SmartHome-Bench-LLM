@@ -166,7 +166,7 @@ python run.py --model <model_name> --method <method_name> --step Step2
 
 
 ## :smiley: Citing 
->   **Acknowledgment:** We sincerely thank Kevin Beussman for donating the videos. We also appreciate the efforts of Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for their assistance with video annotation.
+
 
 If you use **SmartHome-Bench** in a scientific publication, please cite the following:
 
@@ -178,4 +178,5 @@ If you use **SmartHome-Bench** in a scientific publication, please cite the foll
   year={2024},
 }
 ```
-This work was completed during an internship at [Wyze](https://www.wyze.com/?srsltid=AfmBOoq6653qRzuw0ouHRr848XPkFt7mBjkACVbS97P6tHOdcD3DbuAn).
+>   **Acknowledgment:** We sincerely thank Kevin Beussman for donating the videos. We also appreciate the efforts of Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for their assistance with video annotation.
+>  This work was completed during an internship at [Wyze](https://www.wyze.com/?srsltid=AfmBOoq6653qRzuw0ouHRr848XPkFt7mBjkACVbS97P6tHOdcD3DbuAn).
