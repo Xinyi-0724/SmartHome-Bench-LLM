@@ -114,8 +114,6 @@ python Video_trim.py
 
 3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.csv](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.csv).
 
->   **Acknowledgment:** We thank Kevin Beussman for donating the videos. We also thank Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for assisting with the video annotation process.
-
 
 ### Run Models and Evaluate
 You can run our experiments using either closed-source or open-source models by specifying the model, method, and evaluation step.
@@ -168,8 +166,9 @@ python run.py --model <model_name> --method <method_name> --step Step2
 
 
 ## :smiley: Citing 
+>   **Acknowledgment:** We sincerely thank Kevin Beussman for donating the videos. We also appreciate the efforts of Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for their assistance with video annotation.
 
-If you use **SmartHome-Bench** in a scientific publication, we would appreciate citations to:
+If you use **SmartHome-Bench** in a scientific publication, please cite the following:
 
 ```bibtex
 @article{zhao2024smarthome,
@@ -179,4 +178,4 @@ If you use **SmartHome-Bench** in a scientific publication, we would appreciate 
   year={2024},
 }
 ```
-This paper is finished during the internship at Wyze.
+This work was completed during an internship at [Wyze](https://www.wyze.com/?srsltid=AfmBOoq6653qRzuw0ouHRr848XPkFt7mBjkACVbS97P6tHOdcD3DbuAn).
