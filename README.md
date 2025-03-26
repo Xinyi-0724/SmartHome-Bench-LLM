@@ -153,12 +153,12 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL)
 
 - **Steps:**
     - `Step1`: (Already completed) Model-generated responses have been collected and stored [here](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Code/VILA/response)
-        > 🔍 **Note:** Any other open-source LLM responses saved in the following JSON format are compatible with `Step2`:
+        > :mag: **Note:** Any other open-source LLM responses saved in the following JSON format are compatible with `Step2`:
         ```json
         {
-          "id": "<example_video_id>",
-          "truth": <ground_truth_label>,
-          "pred": "{\n  \"result\": <llm_predicted_label>\n}"
+          "id": "<example_video_id>",                  // Unique identifier for the input video
+          "truth": 0,                                  // Ground truth label (0 or 1)
+          "pred": "{\n  \"result\": 1\n}"              // Model-predicted label (0 or 1) as a JSON-encoded string
         }
         ```
     - `Step2`: Evaluate model performance (e.g., accuracy) based on the collected responses.
