@@ -152,8 +152,16 @@ We integrate with [VILA](https://github.com/NVlabs/VILA) for open-source experim
 Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL)
 
 - **Steps:**
-    - `Step1`: (Already completed) Model-generated responses are collected and stored [HERE](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Code/VILA/response) 
-    - `Step2`: Calculate accuracy based on collected responses
+    - `Step1`: (Already completed) Model-generated responses have been collected and stored [here](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Code/VILA/response)
+        > 🔍 **Note:** Any other open-source LLM responses saved in the following JSON format are compatible with `Step2`:
+        ```json
+        {
+          "id": "<example_id>",
+          "truth": <ground_truth_label>,
+          "pred": "{\n  \"result\": <predicted_label>\n}"
+        }
+        ```
+    - `Step2`: Evaluate model performance (e.g., accuracy) based on the collected responses.
 
 - **Command:** 
 ```bash
