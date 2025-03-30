@@ -166,7 +166,7 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL)
 - **Command:** 
 ```bash
 cd SmartHome-Bench-LLM/Code/VILA
-python run.py --model VILA --method <method_name> --step Step2
+python run.py --model <model_name> --method <method_name> --step Step2
 ```
 
 </div>
