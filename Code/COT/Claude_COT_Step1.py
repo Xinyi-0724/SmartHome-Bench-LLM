@@ -239,7 +239,7 @@ def main_part(directory, model_type, batch_size, sleep_time):
 if __name__ == "__main__":
     # Get the current directory of the script
     current_dir = os.getcwd()
-    directory = os.path.join(current_dir, "downloads")  # Directory where videos are saved
+    directory = os.path.join(current_dir, "../downloads")  # Directory where videos are saved
     batch_size = 50  # Adjust batch size as needed
     model_type = 'claude-3-5-sonnet'
     sleep_time = 60  # Adjust sleep time (in seconds) as needed
