@@ -135,7 +135,7 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
           
 - **Arguments:**
     - model_name: Flash, Pro, GPT, GPTmini, Claude
-    - method_name: zeroshot, fewshot, COT, ICL, LLMChain,
+    - method_name: zeroshot, fewshot, COT, ICL, LLMChain
     - step: Step1, Step2, Step3
     - example usage: python run.py --model Flash --method zeroshot --step Step1
 
@@ -162,7 +162,11 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL)
         }
         ```
     - `Step2`: Evaluate model performance (e.g., accuracy) based on the collected responses.
-
+      
+- **Arguments:**
+    - method_name: zeroshot, fewshot, COT, ICL
+    - example usage: python run.py --model VILA --method zeroshot --step Step2
+      
 - **Command:** 
 ```bash
 cd SmartHome-Bench-LLM/Code/VILA
