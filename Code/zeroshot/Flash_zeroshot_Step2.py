@@ -159,7 +159,7 @@ def summarize_category_accuracy(df, categories):
 if __name__ == "__main__":
     model_type = 'flash'
     json_filename = f'response/responses_{model_type}_0shot_1203.jsonl'
-    csv_filename = 'Annotation_vad_1203.csv'
+    csv_filename = '../Annotation_vad_1203.csv'
 
     anomalies = extract_json(json_filename)
     ground_truth_df = load_ground_truth(csv_filename)
