@@ -4,7 +4,7 @@
 # In[1]:
 
 
-# XYnote:this code is the step 1 designed to test GPT-4o performace on VAD (zero-shot prompting)
+# This code is the step 1 designed to test GPT-4o performace on VAD (zero-shot prompting)
 # In step 1, we output a json and a jsonl file to collect the response from LLM first
 # Test dataset: 1203 videos in 'vad_paper_video_final' GCS bucket downloaded in the local folder named "downloads"
 
