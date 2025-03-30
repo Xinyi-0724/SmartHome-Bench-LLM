@@ -133,7 +133,7 @@ def summarize_category_accuracy(df, categories):
 if __name__ == "__main__":
     model_type = 'claude-3-5-sonnet'
     json_filename = f'response/responses_{model_type}_icl_1203.jsonl'
-    csv_filename = 'Annotation_vad_1203.csv'
+    csv_filename = '../Annotation_vad_1203.csv'
 
     anomalies = extract_json(json_filename)
     ground_truth_df = load_ground_truth(csv_filename)
