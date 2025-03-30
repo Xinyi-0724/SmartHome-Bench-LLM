@@ -3,10 +3,8 @@
 
 # In[1]:
 
-
-# XYnote:this code is the step 1 designed to test GPT-4o performace on several tasks: task relevance, categorization, anomaly detection
 # In step 1, we output a json and a jsonl file to collect the response from LLM first
-# Test dataset: 1203 videos in 'vad_paper_video_final' GCS bucket downloaded in the local folder named "downloads"
+
 
 import os
 import time
@@ -201,7 +199,7 @@ def main_part(directory, model_type, batch_size):
 if __name__ == "__main__":
     # Get the current directory of the script
     current_dir = os.getcwd()
-    directory = os.path.join(current_dir, "downloads")  # Directory where videos are saved
+    directory = os.path.join(current_dir, "../downloads")  # Directory where videos are saved
     batch_size = 10  # Adjust batch size as needed
     model_type = 'gpt-4o-mini'
     filename, df_time = main_part(directory, model_type, batch_size)
