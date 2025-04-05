@@ -185,7 +185,7 @@ If you use **SmartHome-Bench** in a scientific publication, please cite the foll
 ```bibtex
 @article{zhao2024smarthome,
   title={SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models},
-  author={Xinyi Zhao, Congjing Zhang, Pei Guo, Wei Li, Lin Chen, Chaoyue Zhang, Shuai Huang},
+  author={Xinyi Zhao, Congjing Zhang, Pei Guo, Wei Li, Lin Chen, Chaoyue Zhao, Shuai Huang},
   journal={arXiv preprint arXiv: },
   year={2024},
 }
