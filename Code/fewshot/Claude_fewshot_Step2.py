@@ -176,7 +176,7 @@ if __name__ == "__main__":
     
     print("All Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", all_metrics)
     print("Normal and Abnormal Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", normal_abnormal_metrics)
-    print("Vague Normal and Vague Abnormal Videos Metrics (accuracy_abnormal/overall_accuracy):", vague_metrics)
+    print("Vague Abnormal Videos Metrics (overall_accuracy):", vague_metrics)
     print("Categorical Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", Categorical_metrics)
     
     # save results of VAD for major voting
