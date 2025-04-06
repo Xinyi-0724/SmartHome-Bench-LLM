@@ -172,36 +172,10 @@ if __name__ == "__main__":
     
     print("All Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", all_metrics)
     print("Normal and Abnormal Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", normal_abnormal_metrics)
-    print("Vague Normal and Vague Abnormal Videos Metrics (accuracy_abnormal/overall_accuracy):", vague_metrics)
+    print("Vague Abnormal Videos Metrics (overall_accuracy):", vague_metrics)
     print("Categorical Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", Categorical_metrics)
     
     # save results of VAD for major voting
     df_accuracy.to_csv(f'0shot_accuracy_{model_type}.csv', index=False)
 
-
-# In[6]:
-
-
-# test if the "nan" value is the same with the json
-df = pd.DataFrame({
-        'Video Name': list(anomalies.keys()),
-        'Predicted Label': list(anomalies.values())
-    })
-df.to_csv(f'test_{model_type}.csv', index=False)
-
-
-# In[7]:
-
-
-# extract the anomalies for the 188 videos:
-df_lyle_res = pd.read_csv("test_Lyle-vila.csv")  
-video_names = [name + ".mp4" for name in df_lyle_res['Video Name'].tolist()]
-vila_anomalies = {key: anomalies[key] for key in video_names if key in anomalies}
-
-ground_truth_df = load_ground_truth(csv_filename)
-df_accuracy, all_metrics, normal_abnormal_metrics, vague_metrics = summarize_anomaly_accuracy(vila_anomalies, ground_truth_df)
-
-print("All Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", all_metrics)
-print("Normal and Abnormal Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", normal_abnormal_metrics)
-print("Vague Normal and Vague Abnormal Videos Metrics (accuracy_abnormal/overall_accuracy):", vague_metrics)
 
