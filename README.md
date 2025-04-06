@@ -178,7 +178,7 @@ python run.py --model VILA --method <method_name> --step Step2
 
 </div>
 
-#### :chart_with_upwards_trend: Evaluation Output from `Step2` Script ####
+#### :chart_with_upwards_trend: Evaluation Output from `Step2` Scripts ####
 
 After running `Step2` for the selected model and method, the evaluation script prints the following metrics to summarize model performance:
 
