@@ -178,7 +178,7 @@ python run.py --model VILA --method <method_name> --step Step2
 
 </div>
 
-:bar_chart: Evaluation Output from `Step2` Script
+#### :bar_chart: Evaluation Output from `Step2` Script ####:
 
 After running `Step2` for the selected model and method, the evaluation script prints the following metrics to summarize model performance:
 
@@ -202,8 +202,8 @@ After running `Step2` for the selected model and method, the evaluation script p
 - **Example:**
 
   ```bash
-  All Videos Metrics: (0.62, 0.85, 0.73, 0.83, 0.62, 0.71, array([[472,  82],
-                                                                [248, 401]]))
+    Normal and Abnormal Videos Metrics: (0.66, 0.85, 0.75, 0.82, 0.66, 0.73, array([[472,  82],
+                                                                               [191, 367]]))
   ```
 
 **3. Vague Abnormal Videos Metrics**
@@ -214,7 +214,7 @@ After running `Step2` for the selected model and method, the evaluation script p
 - **Example:**
 
   ```bash
-  Vague Abnormal Videos Accuracy: 0.37
+  Vague Abnormal Videos Metrics: 0.37
   ```
 
 **4. Categorical Video Metrics**
