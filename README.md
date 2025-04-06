@@ -132,7 +132,7 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL), LLM Chai
         - `Step1`: Generate initial model responses
         - `Step2`: Generate rule-based self-reflection
         - `Step3`: Calculate accuracy
-          
+    
 - **Arguments:**
     - model_name: Flash, Pro, GPT, GPTmini, Claude
     - method_name: zeroshot, fewshot, COT, ICL, LLMChain
@@ -145,7 +145,10 @@ cd SmartHome-Bench-LLM/Code
 python run.py --model <model_name> --method <method_name> --step <step>
 ```
 
+</div>
+
 #### :yellow_circle: Open-Source Model: VILA ####
+
 We integrate with [VILA](https://github.com/NVlabs/VILA) for open-source experiments.
 
 - **Supported Methods:**
@@ -162,16 +165,82 @@ Zero-Shot, Few-Shot, Chain-of-Thought (CoT), In-context Learning (ICL)
         }
         ```
     - `Step2`: Evaluate model performance (e.g., accuracy) based on the collected responses.
-      
+    
 - **Arguments:**
     - method_name: zeroshot, fewshot, COT, ICL
     - example usage: python run.py --model VILA --method zeroshot --step Step2
-      
+    
 - **Command:** 
 ```bash
 cd SmartHome-Bench-LLM/Code/VILA
 python run.py --model VILA --method <method_name> --step Step2
 ```
+
+</div>
+
+:bar_chart: Evaluation Output from `Step2` Script
+
+After running `Step2` for the selected model and method, the evaluation script prints the following metrics to summarize model performance:
+
+**1. All Videos Metrics**
+ Evaluates the model across the entire dataset.
+
+- **Fields:** `accuracy_abnormal`, `accuracy_normal`, `overall_accuracy`, `precision`, `recall`, `f1`, `confusion_matrix`
+
+- **Example:**
+
+  ```bash
+  All Videos Metrics: (0.62, 0.85, 0.73, 0.83, 0.62, 0.71, array([[472,  82],
+                                                                [248, 401]]))
+  ```
+
+**2. Normal and Abnormal Videos Metrics**
+ Evaluates performance on clearly labeled normal/abnormal videos (excluding vague abnormal videos).
+
+- **Fields:** Same as above
+
+- **Example:**
+
+  ```bash
+  All Videos Metrics: (0.62, 0.85, 0.73, 0.83, 0.62, 0.71, array([[472,  82],
+                                                                [248, 401]]))
+  ```
+
+**3. Vague Abnormal Videos Metrics**
+ Evaluates performance on 91 vague abnormal videos.
+
+- **Field:** `overall_accuracy` (single scalar)
+
+- **Example:**
+
+  ```bash
+  Vague Abnormal Videos Accuracy: 0.37
+  ```
+
+**4. Categorical Video Metrics**
+ Per-category breakdown of performance (e.g., Baby Monitoring, Security, etc.).
+
+- **Fields (per category):** `accuracy_abnormal`, `accuracy_normal`, `overall_accuracy`, `precision`, `recall`, `f1`, `confusion_matrix`
+
+- **Example (subset):**
+
+  ```bash
+  'Baby Monitoring': (0.80, 0.95, 0.90, 0.89, 0.80, 0.84, array([[18,  1],
+                                                                [ 2,  8]]))
+  'Security': (0.71, 0.82, 0.77, 0.72, 0.71, 0.71, array([[290,  65],
+                                                         [ 69, 168]]))
+  ```
+
+
+
+>   🔍 **Note:** The confusion matrix follows the format `[[TN, FP], [FN, TP]]` where:
+>
+>   - **TN**: True Negatives (correctly predicted normal)
+>   - **FP**: False Positives (normal misclassified as abnormal)
+>   - **FN**: False Negatives (abnormal misclassified as normal)
+>   - **TP**: True Positives (correctly predicted abnormal)
+
+
 
 </div>
 
@@ -183,11 +252,11 @@ python run.py --model VILA --method <method_name> --step Step2
 If you use **SmartHome-Bench** in a scientific publication, please cite the following:
 
 ```bibtex
-@article{zhao2024smarthome,
+@InProceedings{zhao2024smarthome,
   title={SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models},
   author={Xinyi Zhao, Congjing Zhang, Pei Guo, Wei Li, Lin Chen, Chaoyue Zhao, Shuai Huang},
-  journal={arXiv preprint arXiv: },
-  year={2024},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  year={2025},
 }
 ```
 >   **Acknowledgment:** We sincerely thank Kevin Beussman for donating the videos. We also appreciate the efforts of Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for their assistance with video annotation.
