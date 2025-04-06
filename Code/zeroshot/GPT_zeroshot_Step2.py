@@ -203,5 +203,5 @@ df_accuracy, all_metrics, normal_abnormal_metrics, vague_metrics = summarize_ano
 
 print("All Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", all_metrics)
 print("Normal and Abnormal Videos Metrics (accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm):", normal_abnormal_metrics)
-print("Vague Normal and Vague Abnormal Videos Metrics (accuracy_abnormal/overall_accuracy):", vague_metrics)
+print("Vague Abnormal Videos Metrics (overall_accuracy):", vague_metrics)
 
