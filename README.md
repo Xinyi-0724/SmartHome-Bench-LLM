@@ -178,7 +178,7 @@ python run.py --model VILA --method <method_name> --step Step2
 
 </div>
 
-#### :bar_chart: Evaluation Output from `Step2` Script ####:
+#### :chart_with_upwards_trend: Evaluation Output from `Step2` Script ####
 
 After running `Step2` for the selected model and method, the evaluation script prints the following metrics to summarize model performance:
 
@@ -233,7 +233,7 @@ After running `Step2` for the selected model and method, the evaluation script p
 
 
 
->   🔍 **Note:** The confusion matrix follows the format `[[TN, FP], [FN, TP]]` where:
+>   🔍 **Note:** All confusion matrices follow the format `[[TN, FP], [FN, TP]]` where:
 >
 >   - **TN**: True Negatives (correctly predicted normal)
 >   - **FP**: False Positives (normal misclassified as abnormal)
