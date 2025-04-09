@@ -9,6 +9,8 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
 [![UWISE](https://img.shields.io/badge/About-UW/ISE-blue.svg)](https://ise.washington.edu/)
 [![WYZE](https://img.shields.io/badge/About-WYZE-orange)](https://www.wyze.com/)
 
+This work was completed during an internship at [Wyze](https://www.wyze.com/?srsltid=AfmBOoq6653qRzuw0ouHRr848XPkFt7mBjkACVbS97P6tHOdcD3DbuAn).
+
 <p align="center">
  <img src="Figures/video_category_distribution.png" width="80%">
     <br>
