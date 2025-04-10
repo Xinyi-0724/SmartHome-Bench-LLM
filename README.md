@@ -116,6 +116,17 @@ python Video_trim.py
 
 3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.csv](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.csv).
 
+### Set Up API Keys
+Before running the models, you need to configure the necessary API keys by setting up the environment variables listed in the [.env.template](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Code/.env.template) file.
+1. For **Gemini-1.5-flash**, **Gemini-1.5-pro**, and **Claude-3.5-sonnet**, you must provide a valid Google Cloud Project ID:
+```bash
+PROJECT_ID=your-vertex-ai-project-id
+```
+2. For **GPT-4o** and **GPT-4o-mini**, you must include your actual OpenAI API key:
+```bash
+OPENAI_API_KEY=your-openai-api-key
+```
+After filling in the required values, save the file as `.env` in the `Code/` directory. This file is used to authenticate and run the corresponding models.
 
 ### Run Models and Evaluate
 You can run our experiments using either closed-source or open-source models by specifying the model, method, and evaluation step.
