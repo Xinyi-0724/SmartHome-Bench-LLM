@@ -219,7 +219,7 @@ def main_part(directory, model_type, batch_size):
 if __name__ == "__main__":
     # Get the current directory of the script
     current_dir = os.getcwd()
-    directory = os.path.join(current_dir, "../downloads")  # Directory where videos are saved
+    directory = os.path.join(current_dir, "/downloads")  # Directory where videos are saved
     batch_size = 10  # Adjust batch size as needed
     model_type = 'gpt-4o-mini'
     filename, df_time = main_part(directory, model_type, batch_size)
