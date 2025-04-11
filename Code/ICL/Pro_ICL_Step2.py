@@ -56,13 +56,27 @@ def load_ground_truth(csv_filename):
     }
     df['True Label'] = df['Label'].map(label_mapping)
     return df[['Title', 'Category', 'Label', 'True Label']]
+
 def calculate_metrics(df):
     cm = confusion_matrix(df['True Label'], df['Predicted Label'])
-    tn, fp, fn, tp = cm.ravel()
+    
+    # Handle cases where only one class is present
+    if cm.shape == (1, 1):
+        if df['True Label'].unique()[0] == 0:
+            tn, fp, fn, tp = cm[0, 0], 0, 0, 0
+        else:
+            tn, fp, fn, tp = 0, 0, 0, cm[0, 0]
+    elif cm.shape == (1, 2):
+        tn, fp, fn, tp = 0, cm[0, 1], 0, cm[0, 0]
+    elif cm.shape == (2, 1):
+        tn, fp, fn, tp = cm[0, 0], 0, cm[1, 0], 0
+    else:
+        tn, fp, fn, tp = cm.ravel()
 
-    precision = precision_score(df['True Label'], df['Predicted Label'])
-    recall = recall_score(df['True Label'], df['Predicted Label'])
-    f1 = f1_score(df['True Label'], df['Predicted Label'])
+    # Compute metrics safely
+    precision = precision_score(df['True Label'], df['Predicted Label'], zero_division=0)
+    recall = recall_score(df['True Label'], df['Predicted Label'], zero_division=0)
+    f1 = f1_score(df['True Label'], df['Predicted Label'], zero_division=0)
 
     total_abnormal_videos = df[df['True Label'] == 1].shape[0]
     total_normal_videos = df[df['True Label'] == 0].shape[0]
@@ -70,10 +84,10 @@ def calculate_metrics(df):
     accuracy_abnormal = df[df['True Label'] == 1]['Accuracy'].mean() if total_abnormal_videos > 0 else 0.0
     accuracy_normal = df[df['True Label'] == 0]['Accuracy'].mean() if total_normal_videos > 0 else 0.0
 
-    # Calculate overall accuracy
     overall_accuracy = df['Accuracy'].mean()
 
     return accuracy_abnormal, accuracy_normal, overall_accuracy, precision, recall, f1, cm
+
 
 # summarize vad accuracy for two difficulty levels
 def summarize_anomaly_accuracy(anomalies, ground_truth_df):
