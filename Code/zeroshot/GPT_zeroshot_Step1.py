@@ -201,19 +201,12 @@ def main_part(directory, model_type, batch_size):
 if __name__ == "__main__":
     # Get the current directory of the script
     current_dir = os.getcwd()
-    directory = os.path.join(current_dir, "/downloads")  # Directory where videos are saved
+    directory = os.path.join(current_dir, "downloads")  # Directory where videos are saved
     batch_size = 10  # Adjust batch size as needed
     model_type = 'gpt4o'
     filename, df_time = main_part(directory, model_type, batch_size)
 
 
-# In[6]:
-
-
-df_time.to_csv(f'0shot_time_{model_type}_1203video.csv', index=False)
-
-
-# In[ ]:
 
 
 
