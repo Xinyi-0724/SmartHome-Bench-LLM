@@ -198,7 +198,7 @@ python run.py --model VILA --method <method_name> --step Step2
 
 #### :chart_with_upwards_trend: Evaluation Output from `Step2` Scripts ####
 
-After running `Step2` for the selected model and method, a csv file including the predicted label and the true label will be output under `/Code` folder. Also, the evaluation script prints the following metrics to summarize model performance:
+After running `Step2` (`Step3` for LLMChain) for the selected model and method, a csv file including the predicted label and the true label will be output under `/Code` folder. Also, the evaluation script prints the following metrics to summarize model performance:
 
 **1. All Videos Metrics**
  Evaluates the model across the entire dataset.
