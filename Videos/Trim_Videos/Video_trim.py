@@ -16,8 +16,8 @@ df_video_ad_begin = df[df['Time'] < 0]
 df_video_no_trim = df[df['Time'] == 0]
 
 # Step 2: Locate the corresponding videos in the "wyze_video" folder
-input_folder = 'wyze_video'
-output_folder = 'wyze_trimmed'
+input_folder = 'raw_video'
+output_folder = '../../Code/downloads'
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
