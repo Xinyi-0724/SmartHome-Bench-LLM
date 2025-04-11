@@ -9,3 +9,4 @@ vertexai
 httpx
 anthropic
 python-dotenv
+moviepy
