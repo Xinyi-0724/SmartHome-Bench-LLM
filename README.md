@@ -120,7 +120,7 @@ python Video_trim.py
 ```
 This will generate the trimmed video clips and save them to: [downloads](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Code/downloads).
 
-3. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.csv](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.csv).
+4. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.csv](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.csv).
 
 ### Set Up API Keys
 Before running the models, you need to configure the necessary API keys by setting up the environment variables listed in the [.env.template](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/blob/main/Code/.env.template) file.
