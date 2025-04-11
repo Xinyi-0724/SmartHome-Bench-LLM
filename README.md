@@ -110,7 +110,7 @@ pip install -r requirements.txt
    - The first **1,023 videos** can be downloaded from YouTube using the provided URLs.
    - The remaining **180 videos**, contributed by our staff, are private and cannot be downloaded.
 
-2. After downloading the videos, place them in the folder: SmartHome-Bench-LLM/Videos/Trim_Videos/raw_video.
+2. After downloading the videos, make sure each video file is named exactly as listed in the "Title" column of [Video_url.csv](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Video_url.csv), and place them in the following folder: SmartHome-Bench-LLM/Videos/Trim_Videos/raw_video.
 
 3. To extract the specific video clips used in our paper, run the trimming script:
 ```bash
