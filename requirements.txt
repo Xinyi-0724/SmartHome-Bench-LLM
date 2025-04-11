@@ -9,4 +9,4 @@ vertexai
 httpx
 anthropic
 python-dotenv
-moviepy
+moviepy==1.0.3
