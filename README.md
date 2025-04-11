@@ -110,7 +110,7 @@ pip install -r requirements.txt
    - The first **1,023 videos** can be downloaded from YouTube using the provided URLs.
    - The remaining **180 videos**, contributed by our staff, are private and cannot be downloaded.
 
-2. After downloading the videos, place them in the folder: [raw_video](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Videos/Trim_Videos/raw_video).
+2. After downloading the videos, place them in the folder: SmartHome-Bench-LLM/Videos/Trim_Videos/wyze_video.
 SmartHome-Bench-LLM/Videos/Trim_Videos/wyze_video.
 
 3. To extract the specific video clips used in our paper, run the trimming script:
@@ -118,7 +118,7 @@ SmartHome-Bench-LLM/Videos/Trim_Videos/wyze_video.
 cd SmartHome-Bench-LLM/Videos/Trim_Videos
 python Video_trim.py
 ```
-This will generate the trimmed video clips and save them to: [downloads](https://github.com/Xinyi-0724/SmartHome-Bench-LLM/tree/main/Code/downloads).
+This will generate the trimmed video clips and save them to: SmartHome-Bench-LLM/Code/downloads/.
 
 4. The complete video annotation details for all 1,203 videos can be found in [Video_Annotation.csv](https://github.com/Xinyi-0724/SmartHome-Bench/blob/main/Videos/Video_Annotation.csv).
 
