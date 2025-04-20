@@ -216,7 +216,7 @@ if __name__ == "__main__":
     model = init_vertex_ai(project_id)
     # Get the video description first:
     model_type = 'flash'
-    video_descriptions = extract_video_anomaly_results(f'rawvideo_chain/responses_{model_type}_llmchain_1203.jsonl')
+    video_descriptions = extract_video_anomaly_results(f'response/responses_{model_type}_llmchain_1203.jsonl')
     # test if the "nan" value is the same with the json
     df = pd.DataFrame({
             'Video Name': list(video_descriptions.keys()),
@@ -224,6 +224,6 @@ if __name__ == "__main__":
         })
     df.to_csv(f'test_rawreason_{model_type}.csv', index=False)
     # load anomaly rules:
-    formatted_rules = load_and_format_rules('rules_output/llmchain_rule.json')
+    formatted_rules = load_and_format_rules('LLMChain/rules_output/llmchain_rule.json')
     batch_size = 5  # Adjust batch size as needed
     jsonl_filename, df_time = main_part(model, video_descriptions, formatted_rules, model_type, batch_size)
