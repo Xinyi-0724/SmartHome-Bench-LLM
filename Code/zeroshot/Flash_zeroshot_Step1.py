@@ -25,7 +25,7 @@ def init_vertex_ai(project_id: str, location="us-central1"):
     return model
 
 # List videos from a local 'downloads' folder
-def list_local_videos(downloads_dir="/downloads"):
+def list_local_videos(downloads_dir="downloads"):
     video_files = []
     for file in os.listdir(downloads_dir):
         if file.endswith(('.mp4', '.avi', '.mov')):
@@ -71,7 +71,7 @@ def batch_process_videos(model, videos, batch_size, output_filename):
 
     def process_video(video):
         # Build a file URI pointing to the video in the local downloads folder
-        video_uri = "file://" + os.path.abspath(os.path.join("/downloads", video))
+        video_uri = "file://" + os.path.abspath(os.path.join("downloads", video))
         
         start_time = time.time()
         response_text, processing_time = analyze_video(model, video_uri)
@@ -112,7 +112,7 @@ def main_part(project_id, model_type, batch_size):
     model = init_vertex_ai(project_id)
     
     # List all videos from local 'downloads' folder
-    videos = list_local_videos("/downloads")
+    videos = list_local_videos("downloads")
     print(f"Found {len(videos)} videos in 'downloads' folder.")
 
     # Create the output directory if it doesn't exist
