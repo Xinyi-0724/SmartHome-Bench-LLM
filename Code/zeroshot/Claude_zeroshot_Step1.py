@@ -14,7 +14,7 @@ import pandas as pd
 import concurrent.futures
 import httpx
 
-from dotenv import load_dotenvc
+from dotenv import load_dotenv
 from anthropic import AnthropicVertex
 
 # Load environment variables from .env
