@@ -22,7 +22,7 @@ This work was completed during an internship at [Wyze](https://www.wyze.com/?srs
 
 ## :star: Features
 
-**SmartHome-Bench** is the first video dataset specifically designed for smart home surveillance scenarios. It serves as a benchmark not only for video anomaly detection (VAD) but also offers a versatile evaluation platform to comprehensively assess the performance of multi-modal large language models (MLLMs) in video reasoning and interpretation. Please see our paper here: (add link).
+**SmartHome-Bench** is the first video dataset specifically designed for smart home surveillance scenarios. It serves as a benchmark not only for video anomaly detection (VAD) but also offers a versatile evaluation platform to comprehensively assess the performance of multi-modal large language models (MLLMs) in video reasoning and interpretation. Please see our paper with appendix [here](https://arxiv.org/abs/2506.12992).
 
 -  :house: First benchmark specifically designed for detecting anomalies in smart home videos.
 - :movie_camera: Dataset includes 1,203 video clips, each annotated with:
@@ -270,11 +270,12 @@ After running `Step2` (`Step3` for LLMChain) for the selected model and method, 
 If you use **SmartHome-Bench** in a scientific publication, please cite the following:
 
 ```bibtex
-@InProceedings{zhao2024smarthome,
+@inproceedings{zhao2025smarthome,
   title={SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models},
-  author={Xinyi Zhao, Congjing Zhang, Pei Guo, Wei Li, Lin Chen, Chaoyue Zhao, Shuai Huang},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-  year={2025},
+  author={Zhao, Xinyi and Zhang, Congjing and Guo, Pei and Li, Wei and Chen, Lin and Zhao, Chaoyue and Huang, Shuai},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={3975--3985},
+  year={2025}
 }
 ```
 >   **Acknowledgment:** We sincerely thank Kevin Beussman for donating the videos. We also appreciate the efforts of Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for their assistance with video annotation.
