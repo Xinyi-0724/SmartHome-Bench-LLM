@@ -270,12 +270,13 @@ After running `Step2` (`Step3` for LLMChain) for the selected model and method, 
 If you use **SmartHome-Bench** in a scientific publication, please cite the following:
 
 ```bibtex
-@inproceedings{zhao2025smarthome,
-  title={SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models},
-  author={Zhao, Xinyi and Zhang, Congjing and Guo, Pei and Li, Wei and Chen, Lin and Zhao, Chaoyue and Huang, Shuai},
-  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
-  pages={3975--3985},
-  year={2025}
+@InProceedings{Zhao_2025_CVPR,
+    author    = {Zhao, Xinyi and Zhang, Congjing and Guo, Pei and Li, Wei and Chen, Lin and Zhao, Chaoyue and Huang, Shuai},
+    title     = {SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR) Workshops},
+    month     = {June},
+    year      = {2025},
+    pages     = {3975-3985}
 }
 ```
 >   **Acknowledgment:** We sincerely thank Kevin Beussman for donating the videos. We also appreciate the efforts of Pengfei Gao, Xiaoya Hu, Liting Jia, Lina Liu, Vincent Nguyen, and Yunyun Xi for their assistance with video annotation.
