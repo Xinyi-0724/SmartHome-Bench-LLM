@@ -12,8 +12,8 @@ SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart 
   <a href="https://www.wyze.com/" target="_blank">
     <img src="https://img.shields.io/badge/About-WYZE-orange" height="22">
   </a>
-  <a href="[https://arxiv.org/abs/2310.17631](https://openaccess.thecvf.com/content/CVPR2025W/VAND/html/Zhao_SmartHome-Bench_A_Comprehensive_Benchmark_for_Video_Anomaly_Detection_in_Smart_CVPRW_2025_paper.html)" target="_blank">
-    <img src="https://img.shields.io/badge/-Paper-black?style=flat&logo=arxiv" height="22">
+  <a href="https://openaccess.thecvf.com/content/CVPR2025W/VAND/html/Zhao_SmartHome-Bench_A_Comprehensive_Benchmark_for_Video_Anomaly_Detection_in_Smart_CVPRW_2025_paper.html" target="_blank">
+    <img src="https://img.shields.io/badge/%20Paper-Link-blue?style=flat&logo=google-scholar" height="22">
   </a>
   <a href="https://huggingface.co/datasets/violetcliff/SmartHome-Bench" target="_blank">
     <img src="https://img.shields.io/badge/-🤗%20Dataset-red?style=flat" height="22">
