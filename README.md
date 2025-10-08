@@ -5,9 +5,20 @@
 <h4 align='center'>
 SmartHome-Bench: A Comprehensive Benchmark for Video Anomaly Detection in Smart Homes Using Multi-Modal Large Language Models
 </h4>
-
-[![UWISE](https://img.shields.io/badge/About-UW/ISE-blue.svg)](https://ise.washington.edu/)
-[![WYZE](https://img.shields.io/badge/About-WYZE-orange)](https://www.wyze.com/)
+<p align="center">
+  <a href="https://arxiv.org/abs/2310.17631" target="_blank">
+    <img src="https://img.shields.io/badge/-Paper-black?style=flat&logo=arxiv" height="22">
+  </a>
+  <a href="https://ise.washington.edu/" target="_blank">
+    <img src="https://img.shields.io/badge/About-UW/ISE-blue.svg" height="22">
+  </a>
+  <a href="https://www.wyze.com/" target="_blank">
+    <img src="https://img.shields.io/badge/About-WYZE-orange" height="22">
+  </a>
+  <a href="https://huggingface.co/datasets/BAAI/JudgeLM-100K" target="_blank">
+    <img src="https://img.shields.io/badge/-🤗%20Dataset-red?style=flat" height="22">
+  </a>
+</p>
 
 This work was completed during an internship at [Wyze](https://www.wyze.com/?srsltid=AfmBOoq6653qRzuw0ouHRr848XPkFt7mBjkACVbS97P6tHOdcD3DbuAn).
 
